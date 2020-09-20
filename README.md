@@ -21,7 +21,7 @@
 <br><hr>
  <div>
 	<h3 style="color:red">My image</h3>
-	<img src="https://courses.uet.vnu.edu.vn/pluginfile.php/1/theme_lambda/logo/1598802679/logo-new.jpg" width="400" height="200"
+	<img src="https://courses.uet.vnu.edu.vn/pluginfile.php/1/theme_lambda/logo/1598802679/logo-new.jpg" width="400" height="200">
  </div>
 	
 </body>
