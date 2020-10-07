@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web development</title>
+    <meta charset="UTF-8" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<style>
+    
+.topnavbar{
+    background-color: #333;
+    height: 50px;
+    top:0;
+    width: 100%;
+    position: absolute;
+    left:0;
+}
+.topnavbar a{
+    float: right;
+    display: block;
+    color:#f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+body {
+    display: contents;
+}
+.list{
+    top: 50px;
+    width: fit-content;
+    position: relative;    
+    display:contents;
+    height: fit-content;
+}
+.list ul{
+    width: fit-content;
+    position: relative;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    /* overflow: auto; */
+    height: 100vh;
+    /* 100vh=wiewport height size */
+}
+.list ul li a{
+    left:0px;
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+.dropbutton{
+    text-align: center;
+    line-height: 100vh;
+}
+
+.list ul li a.current, .list ul li a:active, .dropdown:hover .dropbutton, .dropbutton{
+    padding: 8px 16px;
+    color: white;
+    text-decoration: none;
+    background-color: #4CAF50;
+}
+
+.content > div{
+    margin-left: 10px;
+    padding:20px;
+    
+}
+.content{
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+}
+.dropdown{
+    display: flex;
+}
+.dropcontent{
+    display: none;
+}
+
+.dropdown:hover .dropcontent{
+    display: block;
+}
+
+@media (max-width: 600px){
+    .dropdown{
+        display: flex;
+        flex-direction: column;
+    }
+    .dropbutton{
+        line-height:1;
+        position: fixed;
+        top:0px;
+        height: 34px;
+    }
+}
+</style>
+<body>
+    <div class="topnavbar">
+        <a href="html/index.html">HTML</a>
+        <a href="css/index.html">CSS</a>
+        <a href="js/index.html">Javascript</a>
+    </div>
+
+    <div class="content">
+        <div class="list">
+            <ul>
+                <li>
+                    <div class="dropdown">
+                        <a class="dropbutton">Menu</a>
+                        <ul>
+                            <li class="dropcontent">
+                                <a href="headings.html">Headings</a>
+                                <a href="paragraphs.html">Paragraphs</a>
+                                <a href="links.html">Links</a>
+                                <a href="images.html">Images</a>
+                                <a href="lists.html">Lists</a>
+                                <a href="tables.html">Tables</a>
+                                <a href="forms.html">Forms</a>
+                                <a href="forms.html">Very long sentence to test flex Very long sentence to test flex
+                                    Very long sentence to test flex</a>
+
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h2>Landing Page</h2>
+            <p>This is a website</p>
+        </div>
+    </div>
+</body>
+
+</html>
